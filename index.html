@@ -5,19 +5,18 @@
     <em>
         <h1>Scratchpad</h1>
     </em>
-
+    <hr>
+    
     <button onclick="myFunction()">Generate Random Recipe</button>
-
     <p id="demo"></p>
-
     <script>
         var recipeNames= ["Spaghetti Bolognese","Thai Basil Chicken","Bugers"];
         function myFunction() {
             r=Math.floor(Math.random() * recipeNames.length);
             document.getElementById("demo").innerHTML = recipeNames[r];
-    }
+            }
     </script> 
-    <hr>
+    
     <h2>Username:</h2>
     <input>
     <h2>Password:</h2>
