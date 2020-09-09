@@ -3,24 +3,34 @@
 <center>
 
     <em>
-        <h1>Sketchpad Website</h1>
+        <h1>Scratchpad</h1>
     </em>
     <script>
-        var r = Math.random();
+        var r = Math.floor(Math.random() * 10); //random int from 0 to 9
         alert(r);
     </script>
+    <button onclick="myFunction()">Generate Random Recipe</button>
+
+    <p id="demo"></p>
+
+    <script>
+        var recipeNames= ["Spaghetti Bolognese","Thai Basil Chicken","Bugers"];
+        function myFunction() {
+            r=Math.floor(Math.random() * recipeNames.length);
+            document.getElementById("demo").innerHTML = recipeNames[r];
+    }
+    </script> 
     <hr>
     <h2>Username:</h2>
     <input>
     <h2>Password:</h2>
     <input>
-    <h3>Check out my other websites about lots of other fantastic things</h3>
     <ul>
-        <li><a href="Webpage_1_Surfing.html">Learning to Surf Blog</a></li>
-        <li><a href="Simple_site">Simple site</a></li>
-        <li><a href="jekyll-site">Architect(Jekyll Site)</a></li>
-        <li><a href="jekyll-site-2">Modernist(Jekyll Site)</a></li>
-        <li><a href="startup-template">Startup Template</a></li>
+        <li><a href="">none</a></li>
+        <li><a href="">none</a></li>
+        //<li><a href="jekyll-site">Architect(Jekyll Site)</a></li>
+        //<li><a href="jekyll-site-2">Modernist(Jekyll Site)</a></li>
+        //<li><a href="startup-template">Startup Template</a></li>
 
 </center>
 
