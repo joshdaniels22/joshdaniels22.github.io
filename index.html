@@ -2,7 +2,7 @@
 <html>
     <head>
         <style>
-            body {background: linear-gradient(to right,orange,red);}
+            body {background: linear-gradient(to right,orange,blue);}
         </style>
     </head>
 <center>
@@ -14,12 +14,16 @@
     <p></p><p></p><p></p><p></p><p></p>
     <button onclick="myFunction()">Generate Random Recipe</button>
     <p id="demo"></p>
-    <iframe src="Spicy_Thai_Basil_Chicken.pdf" width="60%" height="700px">
-    </iframe>
+    <!-- <iframe src="Spicy_Thai_Basil_Chicken.pdf" width="60%" height="700px"></iframe> -->
     <script>
         var recipeNames= ["Spaghetti Bolognese","Thai Basil Chicken","Bugers"];
+        r1=0;
+        r=0;
         function myFunction() {
-            r=Math.floor(Math.random() * recipeNames.length);
+            while (r1==r){
+                   r=Math.floor(Math.random() * recipeNames.length);
+                   }
+            r1=r;
             document.getElementById("demo").innerHTML = recipeNames[r];
             }
     </script> 
