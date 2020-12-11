@@ -2,21 +2,22 @@
 <html>
     <head>
         <style>
-            body {background: linear-gradient(to right,orange,blue);}
+            body {background: #007399}
         </style>
     </head>
 <center>
 
-    <em>
-        <h1>Scratchpad</h1>
-    </em>
+    <h1 style="background: #00131a; color: white; font-family:Verdana;">Scratchpad</h1>
     <hr>
     <p></p><p></p><p></p><p></p><p></p>
-    <button onclick="myFunction()">Generate Random Recipe</button>
-    <p id="demo"></p>
+    <button onclick="myFunction()" style="border-radius: 8px; background: white; font-family:Verdana;">Generate Random Recipe</button>
+    <p id="demo" style=" color: white; font-family:Verdana;"></p>
     <!-- <iframe src="Spicy_Thai_Basil_Chicken.pdf" width="60%" height="700px"></iframe> -->
     <script>
-        var recipeNames= ["Spaghetti Bolognese","Thai Basil Chicken","Bugers"];
+        var recipeNames= ["Spaghetti Bolognese",
+                          "Thai Basil Chicken",
+                          "Bugers",
+                          "Sausage and Mash"];
         r1=0;
         r=0;
         function myFunction() {
