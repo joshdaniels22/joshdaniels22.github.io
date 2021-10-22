@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            body {background: #f1979f}
+			.button {
+			  background-color: white /* Green */
+			  border: none;
+			  color: white;
+			  padding: 16px 32px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 16px;
+			  margin: 4px 2px;
+			  transition-duration: 0.4s;
+			  cursor: pointer;
+			 
+			}
+			.button1 {
+			  background-color: white;
+			  color: black;
+			  border: 2px solid #555555;
+			  border-radius: 4px;
+			}
+			.button1:hover {
+			  background-color: #555555;
+			  color: white;
+			}
+        </style>
+    </head>
+<center>
+
+    <h1 style=" color: white; font-family:Verdana;"><em>Can't Think of What to Cook? Try This!</em></h1>
+    <p></p><p></p><p></p><p></p><p></p>
+    <button onclick="myFunction()" class="button button1">Gimme A Recipe!</button>
+    <p id="demo" style=" color: white; font-family:Verdana;"></p>
+    <!-- <iframe src="Spicy_Thai_Basil_Chicken.pdf" width="60%" height="700px"></iframe> -->
+    <script>
+        var recipeNames= ["Spaghetti Bolognese",
+                          "Thai Basil Chicken",
+                          "Bugers",
+                          "Sausage and Mash", 
+                          "Fish and Chips", 
+                          "Teriyaki Chicken", 
+                          "Creamy Chicken and Mushroom Pasta", "Tomato Soup", "Mushroom Soup", "Bin Rashied Pizza [Take Out]", "Mehanos Pizza [Take Out]",
+                          "Cashew Nut Chicken from Simply Asia [Take Out]", "Bibi's Butter Chicken and Biryani [Take Out]", "Fish Cakes", "Babooti",
+                          "Primi Piatti [Take Out]", "Sticky BBQ Burgers and Wings [Take Out]", 
+                          "Lasanga", "Woolworths Steaks with Butternut and Spinach [Ready Made]", "Mince Curry", "Broccoli Chicken", "Woolworths Pie [Ready Made]", 
+                          "Ribs", "Lamb Tagine", "Salmon with Garlic Potatoes","Mince Tacos with Salsa and Guacamoli","Cajun Chicken Rice Bowl"];
+        r1=0;
+        r=0;
+        function myFunction() {
+            while (r1==r){
+                   r=Math.floor(Math.random() * recipeNames.length);
+                   }
+            r1=r;
+            document.getElementById("demo").innerHTML = recipeNames[r];
+            }
+    </script> 
+
+
+</center>
+
+</html>
