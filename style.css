@@ -9,6 +9,12 @@ body {
     background: #171723;
 }
 
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 div{
     position: absolute;
     top: 50%;
