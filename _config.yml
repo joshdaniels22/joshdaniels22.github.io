@@ -1,4 +1,5 @@
-# Build Settings
-
-
-theme: minima
+title: Joshua Daniels
+description: Hi there! Welcome to my person website! My name's Josh and I'm a software developer. On this site you'll find things I've been up to and cool project I've worked on.
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-architect
