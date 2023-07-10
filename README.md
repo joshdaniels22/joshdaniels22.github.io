@@ -21,6 +21,7 @@ Allan Gray | Jan 2022 - Present
 
 ### Bachelor of Science in Computer Science and Mathematics
 University of Cape Town | Graduated December 2021
+
 Relevant coursework:
 - Data Structures and Algorithms
 - Object-Oriented Programming
